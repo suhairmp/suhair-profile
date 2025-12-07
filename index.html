@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhair M P - Functional Test Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS for Dark Theme and Styling */
+        :root {
+            --primary-color: #BB86FC; /* A vibrant purple for highlights */
+            --background-color: #121212; /* Very dark background */
+            --card-background: #1E1E1E; /* Slightly lighter for cards/sections */
+            --text-color: #E0E0E0; /* Light gray for main text */
+            --secondary-text-color: #A0A0A0; /* Muted gray for secondary info */
+            --border-color: #333333;
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            color: var(--secondary-text-color);
+            margin-bottom: 20px;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-info span {
+            margin: 0 10px;
+        }
+
+        section {
+            background-color: var(--card-background);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Styling for list items in sections */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '•';
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Specific styling for work experience */
+        .work-item {
+            border-left: 3px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .work-item p.role, .work-item p.duration, .education-item p.duration {
+            font-size: 0.9em;
+            color: var(--secondary-text-color);
+            margin-top: 5px;
+        }
+        
+        .work-item ul li::before {
+             content: '-'; /* Using a dash for sub-bullets */
+        }
+        
+        /* Skills grid layout */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: var(--secondary-text-color);
+            font-size: 0.8em;
+            border-top: 1px solid var(--border-color);
+            margin-top: 20px;
+        }
+        
+        /* Responsiveness for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 20px 0 10px 0;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-info a, .contact-info span {
+                margin: 5px 0;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Suhair M P</h1>
+            <p class="contact-info">
+                <span>📍 Hyderabad, India</span>
+                <span>|</span>
+                <a href="tel:+918547397307">📞 +91 85473 97307</a>
+                <span>|</span>
+                <a href="mailto:suhair.p@hcltech.com">📧 suhair.p@hcltech.com</a>
+            </p>
+        </header>
+
+        <section id="summary">
+            <h2>Professional Summary 👨‍💻</h2>
+            <p>
+                Functional Test Engineer with **2 years of hands-on experience** in manual testing, functional validation, UI/UX checks, and defect life cycle management. Skilled in smoke, sanity, functional, regression, compatibility, and system-level testing. Strong experience in **Game testing** and **Console validation**. Currently expanding skills in **Python** and **Selenium** to support automation-driven testing environments.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Core Skills 🛠️</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Functional Testing</span>
+                <span class="skill-tag">Smoke & Sanity Testing</span>
+                <span class="skill-tag">Regression Testing</span>
+                <span class="skill-tag">Compatibility Testing</span>
+                <span class="skill-tag">Test Case Execution</span>
+                <span class="skill-tag">Bug Reporting</span>
+                <span class="skill-tag">UI/UX Validation</span>
+                <span class="skill-tag">Python (Beginner)</span>
+                <span class="skill-tag">Selenium WebDriver (Basic)</span>
+                <span class="skill-tag">STLC & SDLC</span>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience 💼</h2>
+            <div class="work-item">
+                <h3>IEB Certification – Manual Testing</h3>
+                <p><strong>HCL Technologies, Hyderabad</strong></p>
+                <p class="duration">20XX – Present</p> <ul>
+                    <li>Performed **Smoke, Sanity, Functional, Regression, Monkey, and Compatibility Testing** on Xbox certification projects.</li>
+                    <li>Conducted performance and stability testing across multiple environments.</li>
+                    <li>Validated **UI/UX elements**, input responses, and gameplay features to ensure compliance with platform requirements.</li>
+                    <li>Logged and tracked defects, working closely with development teams for resolution.</li>
+                    <li>Delivered quality outputs under shift-based **Agile** project timelines.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education & Certifications 🎓</h2>
+            
+            <div class="education-item">
+                <h3>Bachelor of Computer Applications (BCA) – Pursuing</h3>
+                <p><strong>Amity University Online</strong></p>
+                <p class="duration">Expected Graduation: 2026</p>
+            </div>
+
+            <h3>Certifications</h3>
+            <ul>
+                <li>Python Programming – GUVI (2025)</li>
+                <li>Manual Testing Assessment – HackerRank</li>
+                <li>Python Intermediate – Percipio</li>
+                <li>Software Testing Foundation - Percipio</li>
+            </ul>
+        </section>
+
+        <section id="additional-info">
+            <h2>Next Steps & Profile Highlights ✨</h2>
+            <ul>
+                <li>Actively learning **Selenium + Python automation** fundamentals to transition into an automation-driven role.</li>
+                <li>Flexible with shift-based schedules and dynamic project requirements.</li>
+                <li>Known for fast learning, adaptability, and quickly fitting into new project environments, with **proven success in global, shift-based teams**.</li>
+                <li>Co-founder of **Vaalnakshathram** (astronomy & tech community).</li>
+            </ul>
+        </section>
+
+        <footer>
+            &copy; 2025 Suhair M P. Built with HTML and CSS.
+        </footer>
+    </div>
+</body>
+</html>
